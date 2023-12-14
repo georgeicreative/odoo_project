@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+web_school,access_sale_order,web_school.model_sale_order,base.group_user,1,1,1,1
+web_school,access_sale_order_line,web_school.model_sale_order_line,base.group_user,1,1,1,1
+web_school,access_web_hobyx,web_school.model_web_hobyx,base.group_user,1,1,1,1
+web_school,access_web_student,web_school.model_web_student,base.group_user,1,1,1,1

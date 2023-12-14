@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="view_web_hobyx_form" model="ir.ui.view">
+        <field name="name">web.hobyx.form</field>
+        <field name="model">web.hobyx</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="name"/>
+                <field name="idh"/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_web_hobyx_tree" model="ir.ui.view">
+        <field name="name">web.hobyx.tree</field>
+        <field name="model">web.hobyx</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="name"/>
+                <field name="idh"/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_web_hoby" model="ir.actions.act_window">
+        <field name="name">webhobyx</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">web.hobyx</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_hobyx"
+              name="hobyx"
+              parent="menu_webschool_hobby"
+              action="action_web_hoby"
+              sequence="10"/>
+</odoo>
